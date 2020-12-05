@@ -143,6 +143,31 @@ public:
   int CountPositive() {
     return CountPositiveRec(head_);
   }
+  
+  T Difference()
+  {
+    
+    if(size_ ==1)
+    {
+      return Size();
+    }
+    if(size_ == 0)
+    {
+      throw std::logic_error("the list is empty");
+    }
+    else
+
+    for( T i = 0; i <= tail_->Next(); i++)
+    {
+      int new_nd;
+      new_nd = head_;
+      RemoveFront();
+      return new_nd -= i;
+    }
+  }
+
+
+
 
 private:
 
